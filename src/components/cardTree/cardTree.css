@@ -1,0 +1,34 @@
+.main-card-tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  border: 1px solid rgb(218, 215, 215);
+  box-shadow: 10px 5px 20px rgb(0 0 0 / 30%);
+  margin: 10px;
+  text-align: center;
+}
+
+.simpleLightBox {
+  display: inline-block;
+}
+
+.main-card__img-tree {
+  width: 92px;
+  height: 60px;
+  margin: 0 auto;
+  object-fit: cover;
+  object-position: center center;
+  cursor: pointer;
+}
+
+.main-card-description-tree {
+  padding: 5px;
+  text-align: left;
+}
+
+.main-card-description-tree > p {
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 5px;
+}

@@ -1,0 +1,23 @@
+.reset-button {
+  padding: 5px;
+  font-family: 'Roboto';
+  border: 1px solid #fff;
+  margin-left: 20px;
+  cursor: pointer;
+  color: #fff;
+}
+
+@media (max-width: 424px) {
+  .reset-button {
+    padding: 4px;
+  }
+  .reset-button > p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 374px) {
+  .reset-button {
+    margin-left: 10px;
+  }
+}

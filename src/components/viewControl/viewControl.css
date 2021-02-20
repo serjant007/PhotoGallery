@@ -1,0 +1,44 @@
+.view-control {
+  height: 80px;
+  width: 100px;
+  border: 1px solid #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.view-control-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+.view-control-box label {
+  display: block;
+  width: 70px;
+  cursor: pointer;
+}
+
+.view-control-box__item {
+  cursor: pointer;
+  margin-right: 5px;
+  margin-bottom: 2px;
+  vertical-align: middle;
+}
+
+@media (max-width: 424px) {
+  .view-control {
+    height: 60px;
+    width: 80px;
+  }
+  .view-control-box > h4,
+  .sort > h4,
+  .sort-subbox label {
+    font-size: 12px;
+  }
+  .view-control-box label {
+    font-size: 12px;
+    text-align: center;
+  }
+}

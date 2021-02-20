@@ -1,0 +1,14 @@
+.main {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 3vw 50px 3vw;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 401px) {
+  .main {
+    padding: 75px 0vw 50px 0vw;
+  }
+}

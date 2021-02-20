@@ -1,0 +1,48 @@
+.main-category {
+  min-width: 300px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.main-category span {
+  cursor: pointer;
+}
+
+.main-category span:hover {
+  color: rgb(9, 95, 76);
+}
+
+.main-category__category,
+.main-category__card {
+  margin-left: 20px;
+}
+.main-category__category-item {
+  font-weight: 500;
+}
+
+.show::before {
+  content: url(../../img/triangle.svg);
+  height: 10px;
+  width: 10px;
+  margin-right: 4px;
+}
+
+.hide::before {
+  content: url(../../img/triangle90.svg);
+  height: 10px;
+  width: 10px;
+  margin-right: 5px;
+}
+
+.sl-overlay {
+  background: #000;
+  opacity: 0.8;
+}
+
+.sl-close {
+  color: #fff;
+}
+
+.sl-counter {
+  color: #fff;
+}
