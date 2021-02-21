@@ -16,7 +16,7 @@ const Pagination = React.memo(function Pagination() {
         {pageNumbers.map((number) => (
           <li key={number} className="pager__item">
             <a
-              onClick={() => paginate(number)}
+              onClick={(e) => paginate(number, e)}
               className={currentPage === number ? 'pager__link pager__link-active' : 'pager__link'}
               href="!#">
               {number}

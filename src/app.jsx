@@ -42,7 +42,10 @@ const App = () => {
   const indexOfFirsCard = indexOfLastCard - cardsPerPage;
   let currentCard = cards.slice(indexOfFirsCard, indexOfLastCard);
   const totalCards = cards.length;
-  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  const paginate = (pageNumber, e) => {
+    e.preventDefault();
+    setCurrentPage(pageNumber);
+  };
   // </Пагинация>
 
   // <Pagination>
@@ -90,11 +93,14 @@ const App = () => {
 
     boxCard.current.classList.add('fade-out');
 
-    const arr = cards.filter((n) => n.filesize !== obj.filesize);
-    setCards(arr);
-    localStorage.setItem('cards', JSON.stringify(arr));
-    const localData = localStorage.getItem('cards');
-    currentCard = JSON.parse(localData).slice(indexOfFirsCard, indexOfLastCard);
+    setTimeout(() => {
+      const arr = cards.filter((n) => n.filesize !== obj.filesize);
+      setCards(arr);
+      localStorage.setItem('cards', JSON.stringify(arr));
+      const localData = localStorage.getItem('cards');
+      currentCard = JSON.parse(localData).slice(indexOfFirsCard, indexOfLastCard);
+    }, 500);
+
     return currentCard;
   };
   // // </Local Storage>
