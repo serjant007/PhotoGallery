@@ -2,7 +2,7 @@ import React from 'react';
 import { SpaContext } from '../../context/SpaContext';
 import './sortBox.css';
 
-const SortBox = () => {
+const SortBox = React.memo(function SortBox() {
   const { sort, setSort } = React.useContext(SpaContext);
 
   const onSort = (e) => {
@@ -61,6 +61,6 @@ const SortBox = () => {
       </ul>
     </div>
   );
-};
+});
 
 export default SortBox;

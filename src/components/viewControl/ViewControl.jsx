@@ -2,7 +2,7 @@ import React from 'react';
 import { SpaContext } from '../../context/SpaContext';
 import './viewControl.css';
 
-const ViewControl = () => {
+const ViewControl = React.memo(function ViewControl() {
   const { cardView, setCardView } = React.useContext(SpaContext);
 
   const onChange = (e) => {
@@ -36,6 +36,6 @@ const ViewControl = () => {
       </ul>
     </div>
   );
-};
+});
 
 export default ViewControl;

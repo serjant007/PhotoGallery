@@ -2,7 +2,7 @@ import React from 'react';
 import { SpaContext } from '../../context/SpaContext';
 import './pagination.css';
 
-const Pagination = () => {
+const Pagination = React.memo(function Pagination() {
   const { cardsPerPage, totalCards, paginate, currentPage } = React.useContext(SpaContext);
 
   const pageNumbers = [];
@@ -26,6 +26,6 @@ const Pagination = () => {
       </ul>
     </nav>
   );
-};
+});
 
 export default Pagination;

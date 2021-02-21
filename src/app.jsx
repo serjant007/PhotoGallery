@@ -28,14 +28,14 @@ const App = () => {
 
   // </Get Data>
 
-  // <Service-State>
+  // <ServiceyState>
 
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [cardsPerPage] = useState(66);
   const [cardView, setCardView] = useState('card');
   const [sort, setSort] = useState('category');
-  // </Service-State>
+  // </ServiceyState>
 
   // <Pagination>
   const indexOfLastCard = currentPage * cardsPerPage;
