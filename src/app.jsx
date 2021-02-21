@@ -4,7 +4,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import MainCard from './components/main-card/MainCard';
 import Tree from './components/tree/Tree';
-import './app.css';
+import './App.css';
 
 const App = () => {
   // <Get Data>
